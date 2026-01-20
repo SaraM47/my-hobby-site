@@ -3,7 +3,7 @@
 Moment 1 handlar om att skapa en enkel React-applikation som är byggd med TypeScript som visar ett fritidsintresse. Denna webbplatsen visar ett fritidsintresse för konstböcker (artbooks), som inkluderar komponenter, props, JSX, map, conditional rendering och responsiv CSS.
 
 ## Publicerad webbplats
-
+Länk till publicerad webbpalts vita GitHub Pages: (https://saram47.github.io/my-hobby-site/)
 ## Funktioner
 - Header med titel via props och bannerbild
 - Lista med minst tre objekt som renderas med map
