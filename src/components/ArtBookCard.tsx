@@ -11,7 +11,7 @@ export const ArtBookCard = ({ book }: ArtBookCardProps) => {
       {/* Book cover image */}
       <img
         src={book.image}
-        alt={`Omslag till ${book.title}`}
+        alt={`Cover for ${book.title}`}
         className="bookImage"
       />
       <h2>{book.title}</h2>
