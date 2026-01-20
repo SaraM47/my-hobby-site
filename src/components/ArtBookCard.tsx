@@ -26,7 +26,7 @@ export const ArtBookCard = ({ book }: ArtBookCardProps) => {
           color: book.isRead ? "green" : "#842029",
         }}
       >
-        Läst: {book.isRead ? "Ja" : "Nej"}
+        Read: {book.isRead ? "Yes" : "No"}
       </p>
     </article>
   );
