@@ -2,20 +2,21 @@ import "./ArtBookCard.css";
 import type { ArtBook } from "../data/artbooks";
 
 interface ArtBookCardProps {
-    book: ArtBook;
+  book: ArtBook;
 }
 
-export const ArtBookCard = ({ book } : ArtBookCardProps) => {
-    return (
-        <article className="bookCard">
-            <h2>{book.title}</h2>
+export const ArtBookCard = ({ book }: ArtBookCardProps) => {
+  return (
+    <article className="bookCard">
+      {/* Book cover image */}
+      <img src={book.image} alt={book.title} className="bookImage" />
+      <h2>{book.title}</h2>
 
-            <p>Författare: {book.author}</p>
-            <p>Utgivningsår: {book.releaseYear}</p>
+      <p>Author: {book.author}</p>
+      <p>Year of release: {book.releaseYear}</p>
 
-            {/* Conditional operation rendering to display if the book has been read */}
-            <p>Läst: {book.isRead ? "Ja" : "Nej"}</p>
-
-        </article>
-    )
-}
+      {/* Conditional operation rendering to display if the book has been read */}
+      <p>Read: {book.isRead ? "Yes" : "No"}</p>
+    </article>
+  );
+};
